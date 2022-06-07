@@ -1,0 +1,277 @@
+/******  CHARGEMENT DES POLICES  *******/
+
+@font-face{
+    font-family: 'ballpark';
+    src: url('font/ballpark.ttf');
+}
+
+@font-face{
+    font-family: 'dayrom';
+    src: url('font/dayrom.ttf');
+}
+
+
+
+
+
+
+body{
+    /*background-color: #c3e2e4; */
+    background-image: url('image/fond_jaune.png');
+    background-size: cover;
+    /*min-width: 200px;
+    max-width: 1023px;
+    margin-left: 5px;
+    margin-right: 5px;*/
+    
+    /* 
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; */
+
+}
+
+
+/* En tete  */
+
+header{
+    /*border:  1px solid blue;*/
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'dayrom';
+    /*margin: 50px;*/
+     
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav a{
+    
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+nav a[id="accueil"]{
+    text-decoration: underline;
+
+}
+
+p[id="titreLogo"]{
+    font-family: 'ballpark';
+    font-size: x-large;
+    margin-top: 65px;
+    margin-bottom: 0px;
+    
+}
+
+p[id="sousTitreLogo"]{
+    clear: both;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+
+img[id="logo"]{
+    float: left;
+    margin-right: 18px;
+    margin-bottom: 0px;
+}
+
+/*
+.logoP{
+   border: 3px red solid;
+}
+*/
+
+ /*nav{
+     border: 3px red solid; 
+}
+
+*/
+
+/*** separateur ******/
+
+.separateur{
+    display: flex;
+    justify-content: flex-start;
+    height: 4px;
+}
+
+p[class="separateur"] img{
+    flex: 1;
+}
+
+
+/*** VACANCES *****/
+
+div[id="vacance"] {
+    display: none;
+
+}
+
+div[id="vacance"] div {
+   
+    display: none;
+    
+}
+
+div[id="piedsvacance"] p{
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+div[id="piedsvacance"] a{
+    display: none;
+
+}
+
+/******** section **********/
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+section article{
+    /*border: 2px solid blue;*/
+    flex: 1;
+
+}
+section aside{
+    /*border: 2px solid blue;*/
+    /*width: 330px;*/
+    /*flex: 0.3;*/
+    background-color: rgb(165, 82, 82);
+    border-radius: 5px;
+    height: 520px;
+}
+
+article p{
+    text-align: justify;
+    font-family: sans-serif;
+    padding-right: 15px;
+}
+article img{
+    float: left;
+    margin-right: 10px;
+}
+article h2{
+    margin-top: 25px;
+    font-family: 'dayrom';
+
+}
+
+aside h3{
+    font-family: 'dayrom';
+    text-align: center;
+    color: white;
+    font-weight: none;
+
+}
+
+aside p{
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+p[id="zozorclasse"] {
+    display: flex;
+    justify-content: center;
+}
+
+div[id="reseauxSocoiaux"]{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/********* Footer  **********/
+
+div[id="separateurPieds"]{
+    display: flex;
+    height: 4px;
+    justify-content: center;
+    background-image: url('image/separateur.png');
+    background-repeat: repeat-x;
+
+    /*border: 1px solid blue;*/
+
+}
+
+div[id="separateurPieds"] p{
+    margin-top: 0px;
+
+}
+
+
+footer{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 200px;
+    flex: 1;
+    /*justify-content: space-between;*/
+}
+
+footer p,li{
+    font-family: sans-serif;
+}
+
+footer h3{
+    font-family: 'dayrom';
+}
+
+footer div{
+    /*height: 300px;*/
+    /*border: 2px solid blue;*/
+    margin-right: 5px;
+}
+
+div[id="tweet"]{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+div[id="photo"]{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+div[id="photo"] p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*flex-wrap: wrap;*/
+}
+
+div[id="amis"]{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+div[id="listeAmis"]{
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+
+ul{
+    list-style-position: outside;
+}
